@@ -212,7 +212,7 @@ const SudokuGame = () => {
         </button>
         <button
           style={{ ...styles.button, ...styles.backBtn }}
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/Home')}
         >
           Back
         </button>
