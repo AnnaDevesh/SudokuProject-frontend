@@ -54,7 +54,7 @@ const SudokuGame = () => {
         return;
       }
 
-      await axios.post('http://localhost:5000/api/update-score', {key:key,difficulty:difficulty});
+      await axios.post('https://sudoku-backend-3haf.onrender.com/api/update-score', {key:key,difficulty:difficulty});
 
       setMessage('✅ Score updated! Redirecting...');
 
