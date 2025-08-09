@@ -29,7 +29,7 @@ const Login = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/login', formData);
+      const response = await axios.post('https://sudoku-backend-3haf.onrender.com/api/login', formData);
 
       const message = response.data.message;
       const token=response.data.token1;

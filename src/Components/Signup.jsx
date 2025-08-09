@@ -27,7 +27,7 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      await axios.post('http://localhost:5000/api/signup', formData);
+      await axios.post('https://sudoku-backend-3haf.onrender.com/api/signup', formData);
       setMessage({ type: 'success', text: 'Signup successful!' });
       setFormData({ name: '', email: '', password: '' });
     } catch (err) {

@@ -11,10 +11,10 @@ const Userprof = () => {
       try {
         const key = localStorage.getItem('key');
         console.log(key);
-        const response = await axios.post('http://localhost:5000/api/id', {email:key });
+        const response = await axios.post('https://sudoku-backend-3haf.onrender.com/api/id', {email:key });
         setUser(response.data);
 
-        const response1 = await axios.post('http://localhost:5000/api/name', {email:key });
+        const response1 = await axios.post('https://sudoku-backend-3haf.onrender.com/api/name', {email:key });
         setUser1(response1.data);
 
 
